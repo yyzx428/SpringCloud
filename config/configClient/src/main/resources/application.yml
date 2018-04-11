@@ -1,0 +1,14 @@
+#spring boot2.0的坑
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
