@@ -11,6 +11,7 @@
         <module name="ribbon" />
         <module name="SpringCloud" />
         <module name="test_server" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="ribbon" target="1.8" />
       <module name="SpringCloud" target="1.5" />
       <module name="test_server" target="1.8" />
+      <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
