@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          #配置git仓库地址
+          uri: https://github.com/yyzx428/SpringcloudConfig/
+          #配置仓库路径（相对路径）
+          search-paths: respo
+          #git账号
+          username:
+          #git密码
+          password:
+      #配置仓库的分支
+      label: master
+
+server:
+  port: 8888
+
+#请求资源的HTTP格式
+#/{application}/{profile}[/{label}]
+#/{application}-{profile}.yml
+#/{label}/{application}-{profile}.yml
+#/{application}-{profile}.properties
+#/{label}/{application}-{profile}.properties
