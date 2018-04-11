@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8764
+spring:
+  application:
+    name: service-ribbon
+
+#默认其实的切入点是：/actuator/hystrix.stream。改成/hystrix.stream
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /
