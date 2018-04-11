@@ -5,21 +5,25 @@ spring:
     config:
       server:
         git:
-          #ÅäÖÃgit²Ö¿âµØÖ·
+          #é…ç½®gitä»“åº“åœ°å€
           uri: https://github.com/yyzx428/SpringcloudConfig/
-          #ÅäÖÃ²Ö¿âÂ·¾¶£¨Ïà¶ÔÂ·¾¶£©
+          #é…ç½®ä»“åº“è·¯å¾„ï¼ˆç›¸å¯¹è·¯å¾„ï¼‰
           search-paths: respo
-          #gitÕËºÅ
+          #gitè´¦å·
           username:
-          #gitÃÜÂë
+          #gitå¯†ç 
           password:
-      #ÅäÖÃ²Ö¿âµÄ·ÖÖ§
+      #é…ç½®ä»“åº“çš„åˆ†æ”¯
       label: master
 
 server:
   port: 8888
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
 
-#ÇëÇó×ÊÔ´µÄHTTP¸ñÊ½
+#è¯·æ±‚èµ„æºçš„HTTPæ ¼å¼
 #/{application}/{profile}[/{label}]
 #/{application}-{profile}.yml
 #/{label}/{application}-{profile}.yml
