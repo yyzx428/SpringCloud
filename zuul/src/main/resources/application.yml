@@ -15,3 +15,20 @@ zuul:
    api-b:
     path: /api-b/**
     serviceId: service-feign
+
+#以下配置使之能访问到熔断器
+  host:
+   socket-timeout-millis: 60000
+   connect-timeout-millis: 60000
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+hystrix:
+ command:
+ #serviceId是default
+  serviceId:
+   execution:
+    isolation:
+     thread:
+      timeoutInMilliseconds: 60000
+
