@@ -17,11 +17,11 @@ spring:
       label: master
 
 server:
-  port: 8888
+  port: 23627
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:22627/eureka/
 
 #请求资源的HTTP格式
 #/{application}/{profile}[/{label}]

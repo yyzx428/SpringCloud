@@ -1,6 +1,6 @@
 spring:
   application:
-    name: config-client
+    name: service-feign
   cloud:
     config:
       label: master
@@ -10,9 +10,14 @@ spring:
         service-id: config-server
       #uri: http://localhost:8888/
 server:
-  port: 8881
+  port: 24627
 eureka:
   client:
     service-url:
      defaultZone: http://localhost:22627/eureka/
+
+
+feign:
+ hystrix:
+  enabled: true
 
